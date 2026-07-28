@@ -1,3 +1,15 @@
 [gd_scene format=3 uid="uid://cwq2gm6pyvpl4"]
 
-[node name="Block" type="Node2D" unique_id=1956373281]
+[sub_resource type="BoxMesh" id="BoxMesh_vkqoe"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_co6qv"]
+
+[node name="Block" type="Node3D" unique_id=1950645581]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1050137171]
+mesh = SubResource("BoxMesh_vkqoe")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=792647323]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1904318718]
+shape = SubResource("BoxShape3D_co6qv")

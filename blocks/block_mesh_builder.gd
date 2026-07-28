@@ -25,6 +25,10 @@ func update_mesh(blocks):
 
 		vertices.append(p)
 		vertices.append(p + Vector3(1,0,0))
+		vertices.append(p + Vector3(1,1,0))
+
+		vertices.append(p)
+		vertices.append(p + Vector3(1,1,0))
 		vertices.append(p + Vector3(0,1,0))
 
 

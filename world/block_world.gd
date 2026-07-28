@@ -2,6 +2,11 @@ extends Node3D
 class_name BlockWorld
 
 
+func _ready():
+
+	place_block(Vector3i(0,2,0),1)
+
+
 @onready var storage = $BlockStorage
 @onready var mesh_builder = $BlockMeshBuilder
 
