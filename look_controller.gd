@@ -4,11 +4,13 @@ extends Node
 
 var rotation_x := 0.0
 
-func look(camera, event):
+func look(player, camera, event):
+
 	if event is InputEventMouseMotion:
-		camera.rotation.y -= event.relative.x * sensitivity
-		
+
+		player.rotation.y -= event.relative.x * sensitivity
+
 		rotation_x -= event.relative.y * sensitivity
-		rotation_x = clamp(rotation_x, -1.5, 1.5)
+		rotation_x = clamp(rotation_x,-1.5,1.5)
 
 		camera.rotation.x = rotation_x
