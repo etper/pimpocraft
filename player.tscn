@@ -5,6 +5,8 @@
 [ext_resource type="Script" uid="uid://dq24bjoaa4l0g" path="res://look_controller.gd" id="3_i3pqv"]
 [ext_resource type="Script" uid="uid://c251cq5vmfhld" path="res://gravity_controller.gd" id="4_hqtel"]
 [ext_resource type="Script" uid="uid://dpoj6h8kmrr0c" path="res://jump_controller.gd" id="5_sweqy"]
+[ext_resource type="Script" uid="uid://cxru2fj86qngx" path="res://player/block_interaction.gd" id="6_2hs0m"]
+[ext_resource type="Script" uid="uid://d1r4jfut7k0uu" path="res://world/block_raycast.gd" id="7_1jxqw"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0xm2m"]
 
@@ -30,3 +32,9 @@ script = ExtResource("4_hqtel")
 
 [node name="JumpController" type="Node" parent="." unique_id=1263031184]
 script = ExtResource("5_sweqy")
+
+[node name="BlockInteraction" type="Node" parent="." unique_id=222388603]
+script = ExtResource("6_2hs0m")
+
+[node name="BlockRaycast" type="Node" parent="BlockInteraction" unique_id=1853368304]
+script = ExtResource("7_1jxqw")

@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://d3oq8keocie17"]
 
+[ext_resource type="PackedScene" uid="uid://bykstb2wyo5ea" path="res://scenes/block_world.tscn" id="1_f3sb7"]
+
 [sub_resource type="BoxShape3D" id="BoxShape3D_co6qv"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vkqoe"]
@@ -13,3 +15,5 @@ shape = SubResource("BoxShape3D_co6qv")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="TestGround" unique_id=423051583]
 mesh = SubResource("BoxMesh_vkqoe")
+
+[node name="BlockWorld" parent="." unique_id=262045211 instance=ExtResource("1_f3sb7")]

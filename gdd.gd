@@ -1,6 +1,5 @@
 #| Phase | Name                    | Main Goals                                                    | Deliverable                        |
 #| ----- | ----------------------- | ------------------------------------------------------------- | ---------------------------------- |
-#| 1     | First Person Controller | Movement, camera, gravity, jumping, collisions                | Walk around a 3D world             |
 #| 2     | Block System            | Create voxel blocks, textures, place/remove blocks            | Break and place blocks             |
 #| 3     | Chunk System            | Store blocks efficiently, generate chunk meshes, face culling | Large worlds with good performance |
 #| 4     | Terrain Generation      | Noise terrain, layers, trees, caves, biomes                   | Procedurally generated world       |

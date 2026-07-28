@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bykstb2wyo5ea"]
+
+[ext_resource type="Script" uid="uid://epnbaw8gxt4k" path="res://world/block_world.gd" id="1_0m3yf"]
+[ext_resource type="Script" uid="uid://bainy0yjk2ysc" path="res://world/block_storage.gd" id="1_sb1r4"]
+[ext_resource type="Script" uid="uid://cty8imxx7e37w" path="res://blocks/block_mesh_builder.gd" id="2_0m3yf"]
+[ext_resource type="Script" uid="uid://cqbbqkwbrpc87" path="res://blocks/block_registry.gd" id="3_jcch2"]
+
+[node name="BlockWorld" type="Node3D" unique_id=262045211]
+script = ExtResource("1_0m3yf")
+
+[node name="BlockStorage" type="Node" parent="." unique_id=1502298005]
+script = ExtResource("1_sb1r4")
+
+[node name="BlockMeshBuilder" type="Node3D" parent="." unique_id=1448615958]
+script = ExtResource("2_0m3yf")
+
+[node name="BlockRegistry" type="Node" parent="." unique_id=1061545576]
+script = ExtResource("3_jcch2")
