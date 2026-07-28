@@ -1,0 +1,32 @@
+[gd_scene format=3 uid="uid://ddkxf2x0bjijq"]
+
+[ext_resource type="Script" uid="uid://dp05trvg2bfo5" path="res://player.gd" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://c3v4ynx6qymbd" path="res://movement_controller.gd" id="2_onrkg"]
+[ext_resource type="Script" uid="uid://dq24bjoaa4l0g" path="res://look_controller.gd" id="3_i3pqv"]
+[ext_resource type="Script" uid="uid://c251cq5vmfhld" path="res://gravity_controller.gd" id="4_hqtel"]
+[ext_resource type="Script" uid="uid://dpoj6h8kmrr0c" path="res://jump_controller.gd" id="5_sweqy"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0xm2m"]
+
+[node name="Player" type="CharacterBody3D" unique_id=220540973]
+script = ExtResource("1_4flbx")
+
+[node name="CameraPivot" type="Node3D" parent="." unique_id=1132578835]
+
+[node name="Camera3D" type="Camera3D" parent="CameraPivot" unique_id=1010692088]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4957366, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=480481321]
+shape = SubResource("CapsuleShape3D_0xm2m")
+
+[node name="MovementController" type="Node" parent="." unique_id=1140933553]
+script = ExtResource("2_onrkg")
+
+[node name="LookController" type="Node" parent="." unique_id=313556393]
+script = ExtResource("3_i3pqv")
+
+[node name="GravityController" type="Node" parent="." unique_id=1286055019]
+script = ExtResource("4_hqtel")
+
+[node name="JumpController" type="Node" parent="." unique_id=1263031184]
+script = ExtResource("5_sweqy")
